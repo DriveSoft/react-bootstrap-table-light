@@ -1,5 +1,5 @@
 import React from 'react'
-import Table from "react-bootstrap/Table";
+import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import { Header } from './Header'
 import TableData from './TableData'

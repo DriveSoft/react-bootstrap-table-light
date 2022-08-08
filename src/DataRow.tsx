@@ -14,7 +14,7 @@ export function DataRow({ columns, row, indexRow, OnClickButtons }: DataRowProps
 
     const result = columns.map((col, index) => {
         if (typeof row[col.field] !== "object") {
-            //if it's not object, then it's just value of field, else it's button
+            //if it's not object, then it's just value of field, else it's array of buttons
 
             if (col?.dateTimeOption) {
                 if (col.dateTimeOption === "onlyDate") {
@@ -132,6 +132,7 @@ export function DataRow({ columns, row, indexRow, OnClickButtons }: DataRowProps
 
             return <td key={getUniqKey(row, index)}>{buttonRow}</td>;
         }
+        return <td key={getUniqKey(row, index)}>{row[col.field]}</td>;
     });
 
     return result;

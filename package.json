@@ -27,20 +27,18 @@
       "pre-commit": "tsdx lint"
     }
   },
-
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DriveSoft/react-bootstrap-table-light.git"
   },
-  "homepage": "",
+  "homepage": "https://github.com/DriveSoft/react-bootstrap-table-light",
   "keywords": [
     "react",
-    "bootstrap", 
-    "table", 
+    "bootstrap",
+    "table",
     "grid",
     "react-component"
   ],
-
   "prettier": {
     "printWidth": 80,
     "semi": true,
@@ -72,5 +70,8 @@
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "react-bootstrap": "^2.5.0"
+  }
 }
