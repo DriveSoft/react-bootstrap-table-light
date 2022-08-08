@@ -84,17 +84,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <BootstrapTable
-        data={data}
-        columns={columns}
-        sortField={"datetime"}
-        sortAsc={false}
-        OnClickButtons={OnClickButtons}
-        //size={"sm"}
-        //variant="dark"
-      />
-    </div>
+    <BootstrapTable
+      data={data}
+      columns={columns}
+      sortField={"datetime"}
+      sortAsc={false}
+      OnClickButtons={OnClickButtons}
+      //size={"sm"}
+      //variant="dark"
+    />
   );
 }
 
